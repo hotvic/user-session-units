@@ -1,0 +1,11 @@
+[Unit]
+Description=X resource setting
+Documentation=man:xrdb(1)
+After=xorg.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xrdb -merge %h/.Xresources
+
+[Install]
+WantedBy=x11.target

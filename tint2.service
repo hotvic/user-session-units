@@ -1,0 +1,9 @@
+[Unit]
+Description=Tint2 Panel
+After=window-manager.target
+
+[Service]
+ExecStart=/usr/bin/tint2
+
+[Install]
+WantedBy=window-manager.target

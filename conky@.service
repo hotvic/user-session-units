@@ -1,0 +1,11 @@
+[Unit]
+Description=Conky
+After=compton.service
+Requires=openbox.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/conky -d -c %h/.config/conky/%I.rc
+
+[Install]
+WantedBy=openbox.service

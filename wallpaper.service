@@ -1,0 +1,10 @@
+[Unit]
+Description=Wallpaper
+Documentation=man:hsetroot(1)
+After=window-manager.target
+
+[Service]
+ExecStart=/usr/bin/hsetroot -fill /usr/share/archlinux/wallpaper/archlinux-poolclouds.jpg
+
+[Install]
+WantedBy=window-manager.target

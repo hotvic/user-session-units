@@ -1,0 +1,6 @@
+[Unit]
+Description=X11 window manager
+AllowIsolate=true
+Wants=xorg.target
+Wants=user-apps.target
+After=compositor.target

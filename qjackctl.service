@@ -1,0 +1,8 @@
+[Unit]
+Description=QJackCTL
+
+[Service]
+ExecStart=/usr/bin/qjackctl
+
+[Install]
+WantedBy=user-apps.target
