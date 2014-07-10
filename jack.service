@@ -1,0 +1,9 @@
+[Unit]
+Description=Jack Audio Server
+
+[Service]
+BusName=org.jackaudio.service
+ExecStart=/usr/bin/jack_control start
+
+[Install]
+WantedBy=default.target

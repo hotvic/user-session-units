@@ -1,7 +1,0 @@
-[Unit]
-Description=Graphical interface
-Wants=compositor.target
-Wants=window-manager.target
-
-[Install]
-Alias=default.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=PA System Tray
+Requires=pulseaudio.service
+
+[Service]
+ExecStart=/usr/bin/pasystray
+
+[Install]
+WantedBy=default.target

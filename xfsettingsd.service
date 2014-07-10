@@ -1,0 +1,9 @@
+[Unit]
+Description=XFCE Settings Daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/xfsettingsd
+
+[Install]
+WantedBy=default.target
